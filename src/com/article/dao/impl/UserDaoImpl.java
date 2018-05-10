@@ -36,11 +36,9 @@ public class UserDaoImpl implements UserDao {
 				user.setAddress(rs.getString("address"));
 				user.setDescription(rs.getString("description"));
 				user.setAge(rs.getInt("age"));
-				user.setIsDelete(rs.getInt("is_delete"));
-				user.setCreateName(rs.getString("create_name"));
+				user.setIsDelete(rs.getString("is_delete"));
 				user.setCreateTime(rs.getTimestamp("create_time"));
-				user.setModifyName(rs.getString("modify_name"));
-				user.setModifyTime(rs.getDate("modify_time"));
+				user.setModifyTime(rs.getString("modify_time"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

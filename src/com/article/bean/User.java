@@ -1,9 +1,10 @@
 package com.article.bean;
 
-import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.Date;
 import java.util.Objects;
+
+import com.article.annotation.Column;
+import com.article.annotation.Table;
 
 /**
  * 用户实体类
@@ -11,27 +12,87 @@ import java.util.Objects;
  * @version 1.0 2018年5月5日 下午2:54:24
  *
  */
-public class User implements Serializable {
+@Table(tableName="t_user")
+public class User {
 
-	/**
-	 * 
+	
+	/*
+	 * id 采用UUID生成
 	 */
-	private static final long serialVersionUID = 7509179973845831348L;
-
-	private String id;
+	@Column(field="id", type="varchar(32)", primaryKey=true, defaultNull=false)
+	private String id; 
+	
+	/*
+	 * 用户名
+	 */
+	@Column(field="username", type="varchar(20)", defaultNull=false)
 	private String username;
+	
+	/*
+	 * 密码
+	 */
+	@Column(field="password", type="varchar(20)", defaultNull=false)
 	private String password;
+	
+	/*
+	 * 头像
+	 */
+	@Column(field="photo", type="varchar(1024)")
 	private String photo;
+	
+	/*
+	 * 电子邮件
+	 */
+	@Column(field="email", type="varchar(60)")
 	private String email;
+	
+	/*
+	 * 性别  0：女  1：男  2：保密
+	 */
+	@Column(field="sex", type="varchar(2)")
 	private String sex;
+	
+	/*
+	 * 地址
+	 */
+	@Column(field="address", type="varchar(100)")
 	private String address;
+	
+	/*
+	 * 昵称
+	 */
+	@Column(field="nickname", type="varchar(30)")
+	private String nickName;
+	
+	/*
+	 * 个人描述
+	 */
+	@Column(field="description", type="varchar(200)")
 	private String description;
+	
+	/*
+	 * 年龄
+	 */
+	@Column(field="age", type="int")
 	private Integer age;
-	private Integer isDelete;
+	
+	/*
+	 * 是否删除  0：删除   1：未删除
+	 */
+	@Column(field="is_delete", type="varchar(1)")
+	private String isDelete;
+	
+	/*
+	 * 创建时间
+	 */
+	@Column(field="create_time", type="timestamp", defaultNull=false)
 	private Timestamp createTime;
-	private Date modifyTime;
-	private String createName;
-	private String modifyName;
+	
+	/*
+	 * 最后修改时间
+	 */
+	@Column(field="modify_time", type="datetime")
+	private String modifyTime;
 	
 	public String getId() {
 		return id;
@@ -75,6 +136,12 @@ public class User implements Serializable {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	public String getNickName() {
+		return nickName;
+	}
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
 	public String getDescription() {
 		return description;
 	}
@@ -87,10 +154,10 @@ public class User implements Serializable {
 	public void setAge(Integer age) {
 		this.age = age;
 	}
-	public Integer getIsDelete() {
+	public String getIsDelete() {
 		return isDelete;
 	}
-	public void setIsDelete(Integer isDelete) {
+	public void setIsDelete(String isDelete) {
 		this.isDelete = isDelete;
 	}
 	public Timestamp getCreateTime() {
@@ -99,23 +166,11 @@ public class User implements Serializable {
 	public void setCreateTime(Timestamp createTime) {
 		this.createTime = createTime;
 	}
-	public Date getModifyTime() {
+	public String getModifyTime() {
 		return modifyTime;
 	}
-	public void setModifyTime(Date modifyTime) {
+	public void setModifyTime(String modifyTime) {
 		this.modifyTime = modifyTime;
-	}
-	public String getCreateName() {
-		return createName;
-	}
-	public void setCreateName(String createName) {
-		this.createName = createName;
-	}
-	public String getModifyName() {
-		return modifyName;
-	}
-	public void setModifyName(String modifyName) {
-		this.modifyName = modifyName;
 	}
 	
 	@Override

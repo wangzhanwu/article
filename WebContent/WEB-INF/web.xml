@@ -4,8 +4,6 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  
-  <!-- 用户登录 -->
   <servlet>
     <servlet-name>UserLoginServlet</servlet-name>
     <servlet-class>com.article.servlet.UserLoginServlet</servlet-class>
@@ -14,8 +12,6 @@
     <servlet-name>UserLoginServlet</servlet-name>
     <url-pattern>/userLoginServlet</url-pattern>
   </servlet-mapping>
-  
-  <!-- 用户注册 -->
   <servlet>
     <servlet-name>RegisterServlet</servlet-name>
     <servlet-class>com.article.servlet.RegisterServlet</servlet-class>
@@ -24,8 +20,6 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/registerServlet</url-pattern>
   </servlet-mapping>
-  
-  <!-- 校验用户名称是否存在 -->
   <servlet>
     <servlet-name>CheckIsExistServlet</servlet-name>
     <servlet-class>com.article.servlet.CheckIsExistServlet</servlet-class>
@@ -34,8 +28,6 @@
     <servlet-name>CheckIsExistServlet</servlet-name>
     <url-pattern>/checkIsExistServlet</url-pattern>
   </servlet-mapping>
-  
-  <!-- 字符编码过滤器 -->
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
     <filter-class>com.article.filter.CharacterEncodingFilter</filter-class>
