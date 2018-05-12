@@ -13,9 +13,8 @@ public interface UserDao {
 
 	/**
 	 * 用户注册
-	 * @param id
 	 * @param username
 	 * @param password
 	 */
-	public int insert(String id, String username, String password);
+	public int register(String username, String password);
 }

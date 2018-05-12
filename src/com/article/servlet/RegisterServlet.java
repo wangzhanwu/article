@@ -2,7 +2,6 @@ package com.article.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,8 +30,6 @@ public class RegisterServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		String id = UUID.randomUUID().toString().replace("-", "");
-		
 		
 		PrintWriter out = response.getWriter();
 		//用户名称和密码不能为空
@@ -50,7 +47,7 @@ public class RegisterServlet extends HttpServlet {
 				if(!matcher.find()) {
 					out.write("-3");//密码只能输入6-20位的字母、数字、下划线
 				} else {
-					int row = userDao.insert(id, username, password);
+					int row = userDao.register(username, password);
 					if(row == 1) {
 						out.write("1");//注册成功
 					}
@@ -62,8 +59,6 @@ public class RegisterServlet extends HttpServlet {
 	}
 	
 	public static void main(String[] args) {
-		String id = UUID.randomUUID().toString().replace("-", "");
-		
 		//校验密码
 		Pattern pattern = Pattern.compile("[\\w]{6,20}");
 		Matcher matcher = pattern.matcher("12345@");

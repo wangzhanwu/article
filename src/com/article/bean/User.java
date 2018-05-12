@@ -1,6 +1,5 @@
 package com.article.bean;
 
-import java.sql.Timestamp;
 import java.util.Objects;
 
 import com.article.annotation.Column;
@@ -62,7 +61,7 @@ public class User {
 	 * 昵称
 	 */
 	@Column(field="nickname", type="varchar(30)")
-	private String nickName;
+	private String nickname;
 	
 	/*
 	 * 个人描述
@@ -86,7 +85,7 @@ public class User {
 	 * 创建时间
 	 */
 	@Column(field="create_time", type="timestamp", defaultNull=false)
-	private Timestamp createTime;
+	private String createTime;
 	
 	/*
 	 * 最后修改时间
@@ -136,11 +135,11 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getNickName() {
-		return nickName;
+	public String getNickname() {
+		return nickname;
 	}
-	public void setNickName(String nickName) {
-		this.nickName = nickName;
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 	public String getDescription() {
 		return description;
@@ -160,10 +159,10 @@ public class User {
 	public void setIsDelete(String isDelete) {
 		this.isDelete = isDelete;
 	}
-	public Timestamp getCreateTime() {
+	public String getCreateTime() {
 		return createTime;
 	}
-	public void setCreateTime(Timestamp createTime) {
+	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
 	public String getModifyTime() {
@@ -194,4 +193,8 @@ public class User {
 				Objects.equals(sex, user.sex) && Objects.equals(address, user.address);
 	}
 	
+	@Override
+	public String toString() {
+		return getClass().getName()+"[id="+id+", username="+username+", password="+password+", createTime="+createTime+"]";
+	}
 }
