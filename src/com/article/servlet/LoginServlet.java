@@ -20,7 +20,7 @@ import com.article.dao.impl.UserDaoImpl;
  * @version 1.0 2018年5月5日 下午6:10:30
  *
  */
-public class UserLoginServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

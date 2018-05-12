@@ -11,7 +11,7 @@ function login() {
 	
 	$.ajax({
 		type: 'post',//请求方式
-		url: 'userLoginServlet',//请求地址
+		url: 'loginServlet',//请求地址
 		data: {'username':username, 'password': password},
 		error: function() {//返回失败
 			alert('登录失败！');

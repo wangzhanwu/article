@@ -233,6 +233,7 @@ public class DBUtils {
 			String setMethodName = "set"+StringUtils.upperCaseFirstCharacter(property);
 			//获取值的类型
 			String valueType = value.getClass().getName();
+			//类型转换，如果方法的参数类型和值的类型不一致则将值的数据类型转换为方法的参数类型
 			if(!fieldType.equalsIgnoreCase(valueType)) {
 				if(fieldType.equalsIgnoreCase("java.lang.String")) {
 					value = String.valueOf(value);

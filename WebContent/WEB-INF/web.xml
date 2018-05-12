@@ -5,12 +5,12 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>UserLoginServlet</servlet-name>
-    <servlet-class>com.article.servlet.UserLoginServlet</servlet-class>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.article.servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>UserLoginServlet</servlet-name>
-    <url-pattern>/userLoginServlet</url-pattern>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>RegisterServlet</servlet-name>
@@ -27,6 +27,14 @@
   <servlet-mapping>
     <servlet-name>CheckIsExistServlet</servlet-name>
     <url-pattern>/checkIsExistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>com.article.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/logoutServlet</url-pattern>
   </servlet-mapping>
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
