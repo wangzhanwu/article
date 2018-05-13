@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 
 import com.article.annotation.Column;
 import com.article.annotation.Table;
-import com.article.bean.User;
+import com.article.bean.Article;
 
 /**
  * 根据注解给实体类生成SQL
@@ -55,6 +55,6 @@ public class TableUtils {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(getCreateTableSQL(User.class));
+		System.out.println(getCreateTableSQL(Article.class));
 	}
 }

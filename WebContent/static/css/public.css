@@ -4,9 +4,14 @@
 	font-family: "微软雅黑";
 }
 
+#container {
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+}
+
 .header {
 	height: 72px;
-	width: 90%;
 	margin: 0 auto;
 	background: #458fce;
 }
@@ -55,10 +60,65 @@ a {
 }
 
 .footer {
+	margin: 0px auto;
 	background: #1e6bad;;
 	color: #fff ;
 	text-align: center ;
 	height: 50px ;
 	line-height:50px;
 	font-family: 微软雅黑;
+}
+
+.content {
+	
+}
+
+.category {
+	margin: 10px 0px;
+}
+.category .title {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #cac5c5;
+	height:30px;
+	font-size: 18px;
+	color: #666;
+}
+
+.category .items .item {
+	width: 160px;
+	height: 210px;
+	background: #ccc;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	float: left;
+	cursor: pointer;
+}
+
+.category ul li {
+	list-style-type: none;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.items .item div {
+	text-align: center;
+}
+
+.item-banner {
+	color: #ffffff;
+	background: #666;
+	margin-top: 30px;
+ }
+ 
+.item-name {
+	font-size: 18px;
+	line-height: 70px; 	
+}
+
+.item-description {
+	font-size: 14px;
+	text-indent: 3em;
+	line-height:50px;
 }
