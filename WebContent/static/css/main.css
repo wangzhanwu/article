@@ -1,0 +1,323 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4ede3;
+    font-family: verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 520px;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background-color: #f4ede3;
+    background-image: url(../images/logo_shanshui03.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 微软雅黑;
+}
+
+/*start: 标题*/
+#header {
+    position: relative;
+    top: 0;
+    left: auto;
+    width: 950px;
+    height: 310px;
+    margin: auto;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+#title {
+	position: relative;
+    top: 156px;
+    left: 0;
+    width: 740px;
+    height: 75px;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+#title a {
+    color: #000;
+    font-family: 微软雅黑,幼圆,微软雅黑,微软雅黑;
+    font-size: 36px;
+    font-weight: normal;
+}
+a:visited {
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+a:link {
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#title h1 {
+    float: left;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#title h2 {
+    float: left;
+    width: 740px;
+    margin: 0;
+    border: none;
+    padding: 0;
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*end: 标题*/
+
+/*start 导航栏*/
+#navigator {
+    position: relative;
+    top: 140px;
+    left: 0;
+    height: 40px;
+    clear: both;
+}
+
+#navList {
+    min-height: 40px;
+    float: left;
+}
+
+ul {
+    word-break: break-all;
+}
+
+#navList li {
+    float: left;
+}
+
+li {
+    list-style: none;
+}
+
+#navList a {
+    display: block;
+    width: 70px;
+    height: 31px;
+    float: left;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 14px;
+    font-family: 微软雅黑,微软雅黑,微软雅黑,微软雅黑;
+}
+
+#navList a:link, #navList a:visited, #navList a:active {
+    color: #555;
+    text-decoration: none;
+}
+
+#navList a:hover {
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.blog_status {
+    float: right;
+    margin: 8px 30px 0 0;
+    border: none;
+    padding: 0;
+    background: none;
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+/*end 导航栏*/
+
+#main {
+    position: relative;
+    top: 0;
+    left: auto;
+    width: 950px;
+    height: auto;
+    margin: auto;
+    border: none;
+    padding-right: 0;
+}
+
+/*start 主体内容*/
+#mainContent {
+    float: right;
+}
+
+#mainContent .forFlow {
+    background-position: right top;
+}
+
+.day {
+    position: relative;
+    width: 690px;
+    height: auto;
+    margin: 0 20px 0 20px;
+    border: none;
+    padding: 0;
+}
+
+.postTitle {
+    position: relative;
+    width: 690px;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.postCon {
+    position: relative;
+    width: 690px;
+    height: auto;
+    margin: 10px 0 0 0;
+    border: none;
+    padding: 0;
+    color: #494949;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.c_b_p_desc {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.postDesc {
+    position: relative;
+    width: 690px;
+    height: 30px;
+    margin: 0;
+    border-bottom: #ccc 1px dashed;
+    padding: 0;
+    color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1.4;
+}	
+/*end 主体内容*/
+
+/*start 侧边栏*/
+#sideBar {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+#sideBarMain {
+    position: relative;
+    width: 205px;
+    height: auto;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.newsItem {
+    position: relative;
+    width: 190px;
+    height: 26px;
+    margin: 0;
+    border: none;
+    padding: 0px;
+    color: #6a6352;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.newsItem .catListTitle {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 195px;
+    height: 25px;
+    margin: 0;
+    border-bottom: #d6dddc 1px solid;
+    padding: 0px;
+    background-color: Transparent;
+    color: #55626e;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h3 {
+    display: block;
+}
+
+#blog_news {
+    overflow: hidden;
+}
+
+#profile_block {
+    margin-top: 10px;
+    line-height: 1.5em;
+    text-align: left;
+    color: #666;
+}
+
+tr {
+	color: #666;
+}
+.calendar {
+	margin-top: 20px;
+	border-top: #d6dddc 1px solid;
+	padding-top: 10px;
+	width: 195px;
+}

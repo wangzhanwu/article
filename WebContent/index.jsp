@@ -43,7 +43,8 @@
 			
 			<%@include file="common/footer.jsp" %>
 		</div>
-		
+
+		<script type="text/javascript" src="${basePath }/static/js/jquery.min.js"></script>
 		<script type="text/javascript" src="${basePath }/static/js/public.js"></script>
 	</body>
 </html>

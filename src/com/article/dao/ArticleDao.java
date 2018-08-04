@@ -26,4 +26,17 @@ public interface ArticleDao {
 	 * @return
 	 */
 	Map<String, Object> getArticleById(String id);
+	
+	/**
+	 * 查询所有文章
+	 * @return
+	 */
+	List<Map<String, Object>> getAllArticles();
+	
+	/**
+	 * 根据用户ID查询文章
+	 * @param userId
+	 * @return
+	 */
+	List<Map<String, Object>> getArticlesByUserId(String userId);
 }

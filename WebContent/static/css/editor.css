@@ -1,0 +1,71 @@
+/*编辑文章页面样式*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+	width: 1200px;
+    margin: 40px auto;
+    position: relative;
+    min-height: 600px;
+    background: #fff;
+    padding: 30px;
+}
+
+/*文章标题*/
+#title {
+	margin-bottom: 15px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px dotted #e4e4e4;
+    box-shadow: none;
+    width: 1000px;
+    height: 34px;
+    padding: 6px 1px;
+    background-color: #fff;
+    outline: none;
+    margin-left:100px;
+}
+
+#editor {
+	margin:0px auto; 
+	width:1000px;
+	height:500px;
+}
+
+#article-form .form-group {
+	margin-top: 120px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+#article-form .form-group .control-label {
+    float: left;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#article-form .form-group .control-right {
+    float: left;
+    vertical-align: top;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#summary {
+	margin-left: 100px;
+	
+}
+
+.form-group input {
+	margin-left: 100px;
+	width: 1000px;
+	height: 25px;
+}

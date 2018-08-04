@@ -20,10 +20,21 @@ public class ArticleDaoImpl implements ArticleDao{
 		return DBUtils.queryForMap(sql, id);
 	}
 	
+	public List<Map<String, Object>> getAllArticles() {
+		String sql = "select * from t_article order by update_time desc";
+		return DBUtils.queryForList(sql);
+	}
+	
+	public List<Map<String, Object>> getArticlesByUserId(String userId) {
+		String sql = "select * from t_article where user_id = ? order by update_time desc";
+		return DBUtils.queryForList(sql, userId);
+	}
+	
 	public static void main(String[] args) {
 		ArticleDaoImpl ad = new ArticleDaoImpl();
-		if(ad.getArticlesByCategoryId(1, 0, 10).size() == 0) {
+		if(ad.getArticlesByUserId("123").size() == 0) {
 			System.out.println("q123");
 		}
 	}
+	
 }

@@ -36,3 +36,7 @@ function logout() {
 		xmlhttp.send();
 	}
 }
+
+function loadData() {
+	
+}

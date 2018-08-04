@@ -29,12 +29,12 @@
     <url-pattern>/checkIsExistServlet</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>LogoutServlet</servlet-name>
-  	<servlet-class>com.article.servlet.LogoutServlet</servlet-class>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.article.servlet.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>LogoutServlet</servlet-name>
-  	<url-pattern>/logoutServlet</url-pattern>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
   </servlet-mapping>
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
